@@ -24,3 +24,26 @@ if response.status_code == 200:
     print("Pigment profile and artwork shared successfully!")
 else:
     print(f"Error sharing: {response.status_code} - {response.text}")
+
+
+
+
+response = requests.post(
+    "https://api.chromaticcultivation.com/communityPalette/sharePigmentProfile",
+    json={
+        "podID": "PP-54321",
+        "harvestDate": "2024-07-15",
+        "colorName": "Crimson Clarity",
+        "colorHex": "#DC143C",
+        "lightfastness": 9,
+        "otherProperties": {
+            "transparency": "high",
+            "granulation": "none"
+        }
+    },
+    files={"artworkImage": open("watercolor_sunset.jpg", "rb")}
+)
+
+
+
+
