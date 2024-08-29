@@ -1,8 +1,5 @@
 import requests
 
-# Base URL for the Chromatic Cultivation API
-BASE_URL = 'https://api.chromaticcultivation.com/pod_catalog/varieties'
-
 def get_pod_varieties(season, color_range):
     """
     Retrieves pod varieties based on season and color range.
@@ -14,6 +11,9 @@ def get_pod_varieties(season, color_range):
     Returns:
         list: A list of pod varieties (if successful), or None (if an error occurs).
     """
+    # Base URL for the Chromatic Cultivation API
+    BASE_URL = 'https://api.chromaticcultivation.com/pod_catalog/varieties'
+
     response = requests.get(
         BASE_URL,
         params={'season': season},
