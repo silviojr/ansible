@@ -3,7 +3,7 @@ import json
 
 
 # sample of calling the pod status API
-def sample_get_pod_status_api():
+def sample_get_pod_status_API():
     # Base URL for the API (replace with your actual API endpoint)
     base_url = "https://api.chromaticcultivation.com"
 
@@ -22,7 +22,7 @@ def sample_get_pod_status_api():
     else:
         print("Error fetching status:", response.status_code)
 
-def sample_post_pod_status_api():
+def sample_post_pod_status_API():
     base_url = "https://api.chromaticcultivation.com"
     pod_id = "12345"
     
