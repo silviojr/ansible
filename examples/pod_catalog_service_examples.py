@@ -12,7 +12,7 @@ def get_pod_varieties(season, color_range):
         list: A list of pod varieties (if successful), or None (if an error occurs).
     """
     # Base URL for the Chromatic Cultivation API
-    BASE_URL = 'https://api.chromaticcultivation.com/pod_catalog/varieties'
+    BASE_URL = 'https://api.chromaticcultivation.com/pod_catalog/varieties123'
 
     response = requests.get(
         BASE_URL,
